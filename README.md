@@ -7,7 +7,7 @@ By Luis Miguel García Marín
 
 This python 3 project was done in order to test my skills learned in the Nvidia course "Fundamentals of Deep Learning".
 
-The content of this repository includes test images such as "leonor-15.jpg" and "elderly-90.jpg" and the notebook where the neural network is developed "age_detector.pynb" (a Spanish version is also included as "detector_de_edad.pynb").
+The content of this repository includes test images such as "leonor-15.jpg" and "anciana-90.jpg" and the notebook where the neural network is developed "age_detector.pynb" (a Spanish version is also included as "detector_de_edad.pynb").
 
 The neural network that is developed in the notebook "age_detector.pynb" is trained for detecting the age of a person that is passed as an image at the input of the network.
 The image bank used together with its labels is already treated to be worked as csv file and can be downloaded at: https://www.kaggle.com/nipunarora8/age-gender-and-ethnicity-face-data-csv

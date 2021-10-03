@@ -18,13 +18,13 @@ Once all the preparations have been made, the execution of the steps can begin.
 The steps of what is done in the notebook are developed below:
 
 1. We import the necessary libraries for the development of our neural network.
-2. We load our dataset of 27305 48x48 pixel facial images with their labels, in
+2. We load our dataset of 27305 facial images of 48x48 pixels with their labels, in
 our case in .csv format. The dataset can be downloaded at: https://www.kaggle.com/nipunarora8/age-gender-and-ethnicity-face-data-csv
 3. We look at the first 5 rows (image with labels) of the dataset.
 4. As we explore the data, we see that the pixels are expressed as strings separated by
 spaces. To handle this data better, we are going to convert it into an array of numbers, helping us
-of a lambda function, which uses the x.split () functions (to separate the elements for each
-space) and np.array () (to construct the array, with float number format of precision 32).
+of a lambda function, which uses the x.split() functions (to separate the elements for each
+space) and np.array() (to construct the array, with float number format of precision 32).
 5. We see that now the pixels are a numerical array.
 6. We now preview about 20 images of the dataset, accompanied by all the labels.
 However, we will only use the 'age' label.
@@ -36,13 +36,13 @@ Knowing that the maximum value of a pixel is 255.
 a reshape to the pixels to go from working with one dimension to three dimensions (width in
 pixels, pixel height and number of color channels). In this way, the entrance of our
 neural network will also have these dimensions.
-10. We get in and age labels. Since there is not a total number of classes
+10. We get in y the age labels. Since there is not a total number of classes
 predefined (the maximum age of a person does not have a strict limit), it does not suit us
 categorize.
 11. Using the train_test_split function, we now partition the entire dataset into train
 and test.
-12. We build the neural network model, in this case based a little on that of the
-booklet 3. The input must be 3-dimensional as specified above (48,48,1).
+12. We build the neural network model, in this case it is a modification of the one on the
+notebook 3 (Convolutional Neural Networks). The input must be 3-dimensional as specified above (48,48,1).
 However, we want the output to be a real number that indicates the predicted age of the
 person in the photo, so the output will be a single unit with relu activation, since there is no
 as other times we have a specific number of categories among which to distribute the percentages
@@ -51,7 +51,7 @@ solution.
 14. In the compilation of the model we indicate to use 'adam' (method of the descent of the gradient
 stochastic) as an optimizer, the root mean square error as a loss function and the error
 mean absolute as metrics.
-15. We proceed to carry out the training of the model, of about 20 epochs.
+15. We proceed to carry out the training of the model, with 20 epochs.
 16. We create the make_predictions function to make separate predictions and test
 our model.
 17. We finally create the age_detector function, which makes use of the make_predictions function

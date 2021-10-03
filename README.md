@@ -2,7 +2,7 @@
 An age detector of a person in a photo
 
 ### English
-## IMAGE CLASSIFIER FOR THE DETECTION OF A PERSON'S AGE
+## IMAGE RECOGNISER FOR THE DETECTION OF A PERSON'S AGE
 By Luis Miguel García Marín
 
 This python 3 project was done in order to test my skills learned in the Nvidia course "Fundamentals of Deep Learning".

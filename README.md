@@ -1,5 +1,7 @@
 # age_detector
-An age detector of a person in a photo
+An age detector of a person in a photo. 
+
+The paper that documents the work can be read [here](Age_Detector_Paper.pdf).
 
 ### English
 ## IMAGE RECOGNISER FOR THE DETECTION OF A PERSON'S AGE
